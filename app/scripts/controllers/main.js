@@ -32,7 +32,7 @@ angular.module('weatherviewApp')
 			$scope.wOzone = wRaw.ozone;
 			$scope.wPressure = wRaw.pressure;
 			$scope.wSummary = wRaw.summary;
-			$scope.wTemp = wRaw.temperature;
+			$scope.wTemp = Math.round(wRaw.temperature);
 			$scope.wTime = $moment(wRaw.time, 'X').format('MMMM D, h:mma');
 			$scope.wVisibility = wRaw.visibility;
 			$scope.wWindBearing = wRaw.windBearing;
