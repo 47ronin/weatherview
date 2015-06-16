@@ -37,8 +37,10 @@ angular.module('weatherviewApp')
 			$scope.wVisibility = wRaw.visibility;
 			$scope.wWindBearing = wRaw.windBearing;
 			$scope.wWindSpeed = wRaw.windSpeed;
-			console.log($scope.wTime);
 			console.log(wRaw); // debug
+		})
+		.error(function(data){
+			console.log('Problem fetching weather data');
 		});
 		$scope.awesomeThings = [
 			'HTML5 Boilerplate',
