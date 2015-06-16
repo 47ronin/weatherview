@@ -58,7 +58,8 @@ module.exports = function (grunt) {
         files: [
           '<%= yeoman.app %>/{,*/}*.html',
           '.tmp/styles/{,*/}*.css',
-          '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
+          '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
+          '<%= yeoman.app %>/videos/{,*/}*.{mp4,webm,ogg}'
         ]
       }
     },
@@ -206,6 +207,7 @@ module.exports = function (grunt) {
           '<%= yeoman.dist %>/scripts/{,*/}*.js',
           '<%= yeoman.dist %>/styles/{,*/}*.css',
           '<%= yeoman.dist %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
+          '<%= yeoman.dist %>/videos/{,*/}*.{mp4,webm,ogg}',
           '<%= yeoman.dist %>/styles/fonts/*'
         ]
       }
@@ -239,7 +241,15 @@ module.exports = function (grunt) {
           '<%= yeoman.dist %>',
           '<%= yeoman.dist %>/images',
           '<%= yeoman.dist %>/styles'
-        ]
+        ],
+        patterns: {
+          html: [
+            [/(videos\/.*?\.(?:mp4|ogg|webm))/gm, 'Update HTML to reference revved videos'],
+            [/(images\/.*?\.(?:gif|jpeg|jpg|png|webp|svg))/gm, 'Update HTML to reference revved images'],
+            [/(styles\/.*?\.(?:css))/gm, 'Update HTML to reference revved css'],
+            [/(scripts\/.*?\.(?:js))/gm, 'Update HTML to reference revved js']
+          ]
+        }
       }
     },
 
@@ -343,6 +353,7 @@ module.exports = function (grunt) {
             '*.html',
             'views/{,*/}*.html',
             'images/{,*/}*.{webp}',
+            'videos/{,*/}*.{mp4,webm,ogg}',
             'styles/fonts/{,*/}*.*'
           ]
         }, {
