@@ -8,7 +8,7 @@
  * Controller of the weatherviewApp
  */
 angular.module('weatherviewApp')
-	.controller('MainCtrl', ['$scope', '$http', '$moment', function ($scope, $http, $moment) {
+	.controller('MainCtrl', ['$scope', '$http', '$moment', '$filter', function ($scope, $http, $moment, $filter) {
 		var APIkey = 'FORECAST_API_KEY'; // forecast.io API key
 		var targetGeo = '32.718371,-117.162531'; // latitude, longitude
 		var stationURL = 'https://api.forecast.io/forecast/' + APIkey + '/' + targetGeo + '?callback=JSON_CALLBACK';
@@ -28,7 +28,8 @@ angular.module('weatherviewApp')
 		.success(function(data){
 			var wRaw = data.currently;
 			$scope.wHumidity = wRaw.humidity;
-			$scope.wIcon = wRaw.icon;
+			var searchIcon = $filter('filter')(iconArray, {oIcon: wRaw.icon});
+			$scope.wIcon = searchIcon[0].wIcon;
 			$scope.wOzone = wRaw.ozone;
 			$scope.wPressure = wRaw.pressure;
 			$scope.wSummary = wRaw.summary;
