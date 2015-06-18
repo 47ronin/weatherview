@@ -154,6 +154,8 @@ body {
   padding-top: 9.5%;
   font-size: 2.2vw;
 }
+#summary h1 small {
+  color: white;
 }
 
 #windIcon h1 {
