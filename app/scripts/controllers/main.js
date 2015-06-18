@@ -37,6 +37,8 @@ angular.module('weatherviewApp')
 			$scope.wTime = $moment(wRaw.time, 'X').format('MMMM D, h:mma');
 			$scope.wVisibility = wRaw.visibility;
 			$scope.wWindBearing = wRaw.windBearing;
+			$scope.wBIcon = 'wi wi-wind-default _' + $scope.wWindBearing + '-deg';
+			$scope.wBIconRotate = 'rotate(' + $scope.wWindBearing + 'deg)';
 			$scope.wWindSpeed = wRaw.windSpeed;
 			console.log(wRaw); // debug
 		})
