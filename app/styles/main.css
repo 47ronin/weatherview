@@ -121,5 +121,25 @@ body {
   border-bottom: solid 1px rgba(225, 225, 225, 0.5);
   color: white;
 }
+
+#wIcon {
+  padding-top: 1%;
+  font-size: 5vw;
+  text-align: center;
 }
 
+#temperature h1 {
+  padding-top: 2%;
+  font-size: 5vw;
+  font-weight: 100;
+}
+
+#summary {
+  padding-top: 2%;
+}
+
+#windIcon h1 {
+  padding-top: 4%;
+  font-size: 4vw;
+  text-align: center;
+}
