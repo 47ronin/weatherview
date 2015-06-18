@@ -27,9 +27,9 @@ angular.module('weatherviewApp')
 		$http.jsonp(stationURL)
 		.success(function(data){
 			var wRaw = data.currently;
-			$scope.wHumidity = wRaw.humidity;
 			var searchIcon = $filter('filter')(iconArray, {oIcon: wRaw.icon});
 			$scope.wIcon = searchIcon[0].wIcon;
+			$scope.wHumidity = wRaw.humidity;
 			$scope.wOzone = wRaw.ozone;
 			$scope.wPressure = wRaw.pressure;
 			$scope.wSummary = wRaw.summary;
