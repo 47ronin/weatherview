@@ -92,16 +92,26 @@ body {
 }
 
 /* Responsive: Portrait tablets and up */
-@media screen and (min-width: 1200px) {
+@media (min-width: 1500px) {
   .container {
-    max-width: 1920px;
+    width: 1920px;
   }
 
-  @media (min-width: 1200px) {
-    .container {
-      width: 1920px;
-    }
+@media (min-width: 3500px) {
+  .container {
+    width: 3840px;
   }
+}
+@media (min-width: 5500px) {
+  .container {
+    width: 5760px;
+  }
+}
+@media (min-width: 7500px) {
+  .container {
+    width: 7680px;
+  }
+}
 
   /* Remove the padding we set earlier */
   .header,
