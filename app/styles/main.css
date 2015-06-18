@@ -1,11 +1,3 @@
-@-webkit-keyframes MOVE-BG {
-    from {
-        background-position: 0% 0%
-    }
-    to { 
-        background-position: 187% 0%
-    }
-}
 
 .browsehappy {
   margin: 0.2em 0;
