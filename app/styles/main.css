@@ -11,12 +11,30 @@ body {
   height: 100%;
 }
 
-/* Wrapper for page content to push down footer */
+.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+}
+
+.fullscreen-bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Wrapper for page content to push down contentStripe */
 	  #wrap {
         min-height: 100%;
         height: auto !important;
         height: 100% !important;
-        /* Negative indent footer by it's height */
+        /* Negative indent footer by its height */
         margin: 0 auto -60px;
       }
 
