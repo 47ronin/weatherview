@@ -38,14 +38,8 @@ body {
         margin: 0 auto -60px;
       }
 
-      /* Set the fixed height of the footer here */
-      #push { height: 55%; }
-	  #footer {
-        height: 60px;
-      }
-      #footer {
-        background-color: #f5f5f5;
-      }
+      /* Scalable height of the push block */
+      #push { height: 63vh; }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
