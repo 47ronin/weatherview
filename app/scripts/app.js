@@ -18,7 +18,6 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'cb.x2js',
     'angular-momentjs'
   ])
   .config(function ($routeProvider) {
