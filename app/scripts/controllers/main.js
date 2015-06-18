@@ -42,7 +42,7 @@ angular.module('weatherviewApp')
 			$scope.wWindSpeed = wRaw.windSpeed;
 			console.log(wRaw); // debug
 		})
-		.error(function(data){
+		.error(function(){
 			console.log('Problem fetching weather data');
 		});
 		$scope.awesomeThings = [
