@@ -98,7 +98,7 @@ body {
   padding-top: 9%;
   font-size: 2.2vw;
 }
-#summary h1 small {
+#summary h1 small, #windIcon h1 small {
   color: white;
 }
 
@@ -116,7 +116,7 @@ body {
     width: 1280px;
   }
   #wIcon {
-    padding-top: 1.8vw;
+    padding-top: 1.3vw;
     font-size: 5vw;
     text-align: center;
   }
@@ -132,8 +132,9 @@ body {
   }
   #windIcon h1 {
     padding-top: 0.8vw;
-    font-size: 4vw;
+    font-size: 3vw;
     text-align: center;
+    line-height: 1vh;
   }
 }
 
@@ -143,7 +144,7 @@ body {
     width: 1920px;
   }
   #wIcon {
-    padding-top: 1.5vw;
+    padding-top: 1.2vw;
     font-size: 5vw;
     text-align: center;
   }
@@ -159,8 +160,9 @@ body {
   }
   #windIcon h1 {
     padding-top: 1.2vw;
-    font-size: 4vw;
+    font-size: 3vw;
     text-align: center;
+    line-height: 1vh;
   }
 }
 
@@ -170,7 +172,7 @@ body {
     width: 3840px;
   }
   #wIcon {
-    padding-top: 1.5vw;
+    padding-top: 1.2vw;
     font-size: 5vw;
     text-align: center;
   }
@@ -185,8 +187,8 @@ body {
     font-size: 2.2vw;
   }
   #windIcon h1 {
-    padding-top: 1.9vw;
-    font-size: 4vw;
+    padding-top: 1.2vw;
+    font-size: 3.5vw;
     text-align: center;
   }
 }
@@ -203,7 +205,7 @@ body {
     width: 7680px;
   }
   #wIcon {
-    padding-top: 1.5vw;
+    padding-top: 1.2vw;
     font-size: 5vw;
     text-align: center;
   }
@@ -218,8 +220,8 @@ body {
     font-size: 2.2vw;
   }
   #windIcon h1 {
-    padding-top: 1.9vw;
-    font-size: 4vw;
+    padding-top: 1.2vw;
+    font-size: 3.5vw;
     text-align: center;
   }
 }
