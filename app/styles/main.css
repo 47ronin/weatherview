@@ -74,6 +74,11 @@ body {
 }
 
 /* Responsive: Portrait tablets and up */
+@media (min-width: 1200px) {
+  .container {
+    width: 1280px;
+  }
+}
 @media (min-width: 1500px) {
   .container {
     width: 1920px;
