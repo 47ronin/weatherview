@@ -39,7 +39,34 @@ angular.module('weatherviewApp')
 			$scope.wWindBearing = wRaw.windBearing;
 			$scope.wBIcon = 'wi wi-wind-default _' + $scope.wWindBearing + '-deg';
 			$scope.wBIconRotate = 'rotate(' + $scope.wWindBearing + 'deg)';
-			$scope.wWindSpeed = wRaw.windSpeed;
+			$scope.wWindSpeed = wRaw.windSpeed.toFixed(1);
+			if ($scope.wWindSpeed < 1.2) {
+				$scope.bWs = 'wi wi-beafort-0';
+			} else if ($scope.wWindSpeed < 3.7) {
+				$scope.bWs = 'wi wi-beafort-1';
+			} else if ($scope.wWindSpeed < 8) {
+				$scope.bWs = 'wi wi-beafort-2';
+			} else if ($scope.wWindSpeed < 13) {
+				$scope.bWs = 'wi wi-beafort-3';
+			} else if ($scope.wWindSpeed < 19.3) {
+				$scope.bWs = 'wi wi-beafort-4';
+			} else if ($scope.wWindSpeed < 25.5) {
+				$scope.bWs = 'wi wi-beafort-5';
+			} else if ($scope.wWindSpeed < 32) {
+				$scope.bWs = 'wi wi-beafort-6';
+			} else if ($scope.wWindSpeed < 39) {
+				$scope.bWs = 'wi wi-beafort-7';
+			} else if ($scope.wWindSpeed < 47) {
+				$scope.bWs = 'wi wi-beafort-8';
+			} else if ($scope.wWindSpeed < 56) {
+				$scope.bWs = 'wi wi-beafort-9';
+			} else if ($scope.wWindSpeed < 65) {
+				$scope.bWs = 'wi wi-beafort-10';
+			} else if ($scope.wWindSpeed < 75) {
+				$scope.bWs = 'wi wi-beafort-11';
+			} else {
+				$scope.bWs = 'wi wi-beafort-12';
+			}
 			console.log(wRaw); // debug
 		})
 		.error(function(){
