@@ -73,33 +73,6 @@ body {
   margin: 30px 0;
 }
 
-/* Responsive: Portrait tablets and up */
-@media (min-width: 1200px) {
-  .container {
-    width: 1280px;
-  }
-}
-@media (min-width: 1500px) {
-  .container {
-    width: 1920px;
-  }
-}
-@media (min-width: 3500px) {
-  .container {
-    width: 3840px;
-  }
-}
-@media (min-width: 5500px) {
-  .container {
-    width: 5760px;
-  }
-}
-@media (min-width: 7500px) {
-  .container {
-    width: 7680px;
-  }
-}
-
 .contentStripe {
   height: 16vh;
 	background-color: rgba(0, 51, 153, 0.5);
@@ -133,4 +106,80 @@ body {
   padding-top: 1.5vw;
   font-size: 4vw;
   text-align: center;
+}
+
+/* Responsive: Portrait tablets and up */
+
+/* 720p displays ------------------------------------------------------------*/
+@media (min-width: 1200px) {
+  .container {
+    width: 1280px; /* 720p displays */
+  }
+}
+
+/* 1080p displays -----------------------------------------------------------*/
+@media (min-width: 1500px) {
+  .container {
+    width: 1920px; /* 1080p displays */
+  }
+  #wIcon {
+    padding-top: 1.5vw;
+    font-size: 5vw;
+    text-align: center;
+  }
+  #temperature h1 {
+    -webkit-transform: translateY(9%);
+    -ms-transform: translateY(9%);
+    transform: translateY(9%);
+    font-size: 5.5vw;
+  }
+  #summary h1 {
+    padding-top: 8%;
+    font-size: 2.2vw;
+  }
+  #windIcon h1 {
+    padding-top: 1.2vw;
+    font-size: 4vw;
+    text-align: center;
+  }
+}
+
+/* 4K displays --------------------------------------------------------------*/
+@media (min-width: 3500px) {
+  .container {
+    width: 3840px; /* 4K displays */
+  }
+}
+/* --------------------------------------------------------------------------*/
+@media (min-width: 5500px) {
+  .container {
+    width: 5760px;
+  }
+}
+
+/* 8K displays --------------------------------------------------------------*/
+@media (min-width: 7500px) {
+  .container {
+    width: 7680px;
+  }
+  #wIcon {
+    padding-top: 1.5vw;
+    font-size: 5vw;
+    text-align: center;
+  }
+  #temperature h1 {
+    -webkit-transform: translateY(16%);
+    -ms-transform: translateY(16%);
+    transform: translateY(16%);
+    font-size: 5.5vw;
+  }
+  #summary h1 {
+    padding-top: 10%;
+    font-size: 2.2vw;
+  }
+  #windIcon h1 {
+    padding-top: 1.9vw;
+    font-size: 4vw;
+    text-align: center;
+  }
 }
