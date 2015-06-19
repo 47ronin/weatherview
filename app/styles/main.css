@@ -78,7 +78,7 @@ body {
   .container {
     width: 1920px;
   }
-
+}
 @media (min-width: 3500px) {
   .container {
     width: 3840px;
