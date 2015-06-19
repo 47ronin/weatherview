@@ -113,14 +113,34 @@ body {
 /* 720p displays ------------------------------------------------------------*/
 @media (min-width: 1200px) {
   .container {
-    width: 1280px; /* 720p displays */
+    width: 1280px;
+  }
+  #wIcon {
+    padding-top: 1.8vw;
+    font-size: 5vw;
+    text-align: center;
+  }
+  #temperature h1 {
+    -webkit-transform: translateY(1%);
+    -ms-transform: translateY(1%);
+    transform: translateY(1%);
+    font-size: 5.5vw;
+  }
+  #summary h1 {
+    padding-top: 6.5%;
+    font-size: 2vw;
+  }
+  #windIcon h1 {
+    padding-top: 0.8vw;
+    font-size: 4vw;
+    text-align: center;
   }
 }
 
 /* 1080p displays -----------------------------------------------------------*/
 @media (min-width: 1500px) {
   .container {
-    width: 1920px; /* 1080p displays */
+    width: 1920px;
   }
   #wIcon {
     padding-top: 1.5vw;
@@ -147,7 +167,27 @@ body {
 /* 4K displays --------------------------------------------------------------*/
 @media (min-width: 3500px) {
   .container {
-    width: 3840px; /* 4K displays */
+    width: 3840px;
+  }
+  #wIcon {
+    padding-top: 1.5vw;
+    font-size: 5vw;
+    text-align: center;
+  }
+  #temperature h1 {
+    -webkit-transform: translateY(16%);
+    -ms-transform: translateY(16%);
+    transform: translateY(16%);
+    font-size: 5.5vw;
+  }
+  #summary h1 {
+    padding-top: 10%;
+    font-size: 2.2vw;
+  }
+  #windIcon h1 {
+    padding-top: 1.9vw;
+    font-size: 4vw;
+    text-align: center;
   }
 }
 /* --------------------------------------------------------------------------*/
