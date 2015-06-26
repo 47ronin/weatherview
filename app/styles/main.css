@@ -81,10 +81,6 @@ body {
   color: white;
 }
 
-#wIcon {
-  padding-top: 1.5vw;
-  font-size: 5vw;
-  text-align: center;
 }
 
 #temperature h1 {
@@ -98,7 +94,7 @@ body {
   padding-top: 9%;
   font-size: 2.2vw;
 }
-#summary h1 small, #windIcon h1 small {
+#temperature h1 small, #summary h1 small, #windIcon h1 small {
   color: white;
 }
 
@@ -114,11 +110,6 @@ body {
 @media (min-width: 1200px) {
   .container {
     width: 1280px;
-  }
-  #wIcon {
-    padding-top: 2.2vw;
-    font-size: 5vw;
-    text-align: center;
   }
   #temperature h1 {
     -webkit-transform: translateY(14%);
@@ -143,11 +134,6 @@ body {
   .container {
     width: 1920px;
   }
-  #wIcon {
-    padding-top: 2.2vw;
-    font-size: 5vw;
-    text-align: center;
-  }
   #temperature h1 {
     -webkit-transform: translateY(25%);
     -ms-transform: translateY(25%);
@@ -170,11 +156,6 @@ body {
 @media (min-width: 3500px) {
   .container {
     width: 3840px;
-  }
-  #wIcon {
-    padding-top: 2.2vw;
-    font-size: 5vw;
-    text-align: center;
   }
   #temperature h1 {
     -webkit-transform: translateY(39%);
@@ -204,9 +185,6 @@ body {
   .container {
     width: 7680px;
   }
-  #wIcon {
-    padding-top: 2.2vw;
-    font-size: 5vw;
     text-align: center;
   }
   #temperature h1 {

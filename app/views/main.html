@@ -2,11 +2,9 @@
 	<div class="col-xs-2">
 		&nbsp;
 	</div>
-	<div class="col-xs-2" id="wIcon">
-		<i ng-class="wIcon"></i>
 	</div>
 	<div class="col-xs-2" id="temperature">
-		<h1>{{wTemp}}<i class="wi wi-fahrenheit"></i></h1>
+		<h1><small><i ng-class="wIcon"></i> </small>{{wTemp}}<i class="wi wi-fahrenheit"></i></h1>
 	</div>
 	<div class="col-xs-2" id="summary">
 		<h1>{{wSummary}}<br><small>{{wTime}}</small></h1>
