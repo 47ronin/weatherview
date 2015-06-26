@@ -21,7 +21,7 @@ Weatherview creates resolution-independent weather conditions suitable for high 
 
 ## Build & development
 
-Run `grunt` for building and `grunt serve` for preview.
+Run `grunt serve` for preview and and `grunt build` for deployment.
 
 ### Project build adjustments
 
