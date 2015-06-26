@@ -67,14 +67,8 @@ angular.module('weatherviewApp')
 			} else {
 				$scope.bWs = 'wi wi-beafort-12';
 			}
-			console.log(wRaw); // debug
 		})
 		.error(function(){
 			console.log('Problem fetching weather data');
 		});
-		$scope.awesomeThings = [
-			'HTML5 Boilerplate',
-			'AngularJS',
-			'Karma'
-		];
 	}]); // end controller MainCtrl
