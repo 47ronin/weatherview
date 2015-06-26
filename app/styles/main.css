@@ -81,6 +81,12 @@ body {
   color: white;
 }
 
+/* Defaults -----------------------------------------------------------------*/
+
+#logo img {
+  width: 100%;
+  height: auto;
+  padding-top: 2.2vw;
 }
 
 #temperature h1 {
@@ -93,6 +99,7 @@ body {
 #summary h1 {
   padding-top: 9%;
   font-size: 2.2vw;
+  text-align: center;
 }
 #temperature h1 small, #summary h1 small, #windIcon h1 small {
   color: white;
@@ -184,8 +191,6 @@ body {
 @media (min-width: 7500px) {
   .container {
     width: 7680px;
-  }
-    text-align: center;
   }
   #temperature h1 {
     -webkit-transform: translateY(39%);
