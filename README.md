@@ -19,9 +19,20 @@ Weatherview creates resolution-independent weather conditions suitable for high 
 - AngularJS
 - Twitter Bootstrap
 
+## Installation
+
+Clone or fork this repository and ensure the following tools are available:
+- [Node Package Manager](https://www.npmjs.com/) (NPM)
+- [Grunt](http://gruntjs.com/)
+- [Bower](http://bower.io/)
+
+Run `npm install` then `bower install`. Grab some coffee :coffee: …this could take a while.
+
+The logo and background video can be customized by replacing `images/logo.png` and `videos/bg-video.mp4`.
+
 ## Build & development
 
-Run `grunt serve` for preview and and `grunt build` for deployment.
+Run `grunt serve` for preview and `grunt build` for build. Deploy the `dist/` directory.
 
 ### Project build adjustments
 
