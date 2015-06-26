@@ -32,7 +32,7 @@ The logo and background video can be customized by replacing `images/logo.png` a
 
 ## Build & development
 
-Run `grunt serve` for preview and `grunt build` for build. Deploy the `dist/` directory.
+Run `grunt serve` for preview, make customizations **only** in the `app/` folder, and `grunt build` to build a release candidate. Deploy the `dist/` directory.
 
 ### Project build adjustments
 
@@ -43,3 +43,7 @@ In order for Grunt to properly copy over resources from the video folder and ext
 - Email: glenn@47ronin.com
 - Twitter: https://twitter.com/gbatuyong
 - GitHub: https://github.com/47ronin
+
+## Credits
+
+- Weather icon artwork by [Lucas Bischoff](https://www.twitter.com/artill)
