@@ -5,7 +5,7 @@ version 0.11.1.
 
 ## Features
 
-Weatherview creates resolution-independent weather conditions suitable for high definition monitors or televisions. The default presets work best with 16:9 aspect ratio displays, and specifically target 720p, 1080p, 4K, and 8K systems. [Weather Icons](https://github.com/erikflowers/weather-icons) CSS-transform usage was modified to display wind icons in a full 360-degree range.
+Weatherview creates resolution-independent weather conditions suitable for high definition monitors or televisions. The default presets work best with 16:9 aspect ratio displays, and specifically target 720p, 1080p, 4K, and 8K systems. Weather condition data is gathered at runtime using the [Forecast.io](http://forecast.io/) JSON API. [Weather Icons](https://github.com/erikflowers/weather-icons) CSS-transform usage was modified to point a wind-direction icon in a full 360-degree range. Wind speed is displayed using the Beaufort scale.
 
 ## Dependencies
 
@@ -27,6 +27,8 @@ Run `grunt serve` for preview and and `grunt build` for deployment.
 
 In order for Grunt to properly copy over resources from the video folder and external dependencies, `Gruntfile.js` was modified.
 
-## Testing
+## Author
 
-Running `grunt test` will run the unit tests with karma.
+- Email: glenn@47ronin.com
+- Twitter: https://twitter.com/gbatuyong
+- GitHub: https://github.com/47ronin
