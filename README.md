@@ -28,7 +28,9 @@ Clone or fork this repository and ensure the following tools are available:
 
 Run `npm install` then `bower install`. Grab some coffee :coffee: …this could take a while.
 
-The logo and background video can be customized by replacing `images/logo.png` and `videos/bg-video.mp4`.
+The logo and background video can be customized by replacing `images/logo.png`, `images/posterimage.jpg` (which should typically be the first frame of the background video), and `videos/bg-video.mp4`.
+
+An API key from [Forecast.io](https://developer.forecast.io/) is required to draw in the live JSON data. Replace the value `FORECAST_API_KEY` in `main.js`.
 
 ## Build & development
 
