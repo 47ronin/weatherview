@@ -89,7 +89,8 @@ body {
 #logo img {
   width: 100%;
   height: auto;
-  padding-top: 2.2vw;
+  padding-top: 0.0vw; /* Will vary based on logo dimensions */
+}
 
 h1 {
   font-weight: inherit;
