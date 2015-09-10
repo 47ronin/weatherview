@@ -42,6 +42,7 @@ In order for Grunt to properly copy over resources from the video folder and ext
 
 ## Author
 
+- Name: Glenn Batuyong
 - Email: glenn@47ronin.com
 - Twitter: https://twitter.com/gbatuyong
 - GitHub: https://github.com/47ronin
