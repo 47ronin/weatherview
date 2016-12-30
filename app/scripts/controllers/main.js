@@ -38,38 +38,34 @@ angular.module('weatherviewApp')
 			$scope.wTime = $moment(wRaw.time, 'X').format('MMMM D, h:mma');
 			$scope.wVisibility = wRaw.visibility;
 			$scope.wWindBearing = wRaw.windBearing;
-			$scope.wBIcon = 'wi wi-wind-default _' + $scope.wWindBearing + '-deg';
-			$scope.wBIconRotate = 'rotate(' + $scope.wWindBearing + 'deg)';
+			$scope.wBIcon = 'wi wi-wind towards-' + $scope.wWindBearing + '-deg';
 			$scope.wWindSpeed = wRaw.windSpeed.toFixed(1);
 			if ($scope.wWindSpeed < 1.2) {
-				$scope.bWs = 'wi wi-beafort-0';
+				$scope.bWs = 'wi wi-wind-beaufort-0';
 			} else if ($scope.wWindSpeed < 3.7) {
-				$scope.bWs = 'wi wi-beafort-1';
+				$scope.bWs = 'wi wi-wind-beaufort-1';
 			} else if ($scope.wWindSpeed < 8) {
-				$scope.bWs = 'wi wi-beafort-2';
+				$scope.bWs = 'wi wi-wind-beaufort-2';
 			} else if ($scope.wWindSpeed < 13) {
-				$scope.bWs = 'wi wi-beafort-3';
+				$scope.bWs = 'wi wi-wind-beaufort-3';
 			} else if ($scope.wWindSpeed < 19.3) {
-				$scope.bWs = 'wi wi-beafort-4';
+				$scope.bWs = 'wi wi-wind-beaufort-4';
 			} else if ($scope.wWindSpeed < 25.5) {
-				$scope.bWs = 'wi wi-beafort-5';
+				$scope.bWs = 'wi wi-wind-beaufort-5';
 			} else if ($scope.wWindSpeed < 32) {
-				$scope.bWs = 'wi wi-beafort-6';
+				$scope.bWs = 'wi wi-wind-beaufort-6';
 			} else if ($scope.wWindSpeed < 39) {
-				$scope.bWs = 'wi wi-beafort-7';
+				$scope.bWs = 'wi wi-wind-beaufort-7';
 			} else if ($scope.wWindSpeed < 47) {
-				$scope.bWs = 'wi wi-beafort-8';
+				$scope.bWs = 'wi wi-wind-beaufort-8';
 			} else if ($scope.wWindSpeed < 56) {
-				$scope.bWs = 'wi wi-beafort-9';
+				$scope.bWs = 'wi wi-wind-beaufort-9';
 			} else if ($scope.wWindSpeed < 65) {
-				$scope.bWs = 'wi wi-beafort-10';
+				$scope.bWs = 'wi wi-wind-beaufort-10';
 			} else if ($scope.wWindSpeed < 75) {
-				$scope.bWs = 'wi wi-beafort-11';
+				$scope.bWs = 'wi wi-wind-beaufort-11';
 			} else {
-				$scope.bWs = 'wi wi-beafort-12';
+				$scope.bWs = 'wi wi-wind-beaufort-12';
 			}
-		})
-		.error(function(){
-			console.log('Problem fetching weather data');
 		});
 	}]); // end controller MainCtrl
