@@ -89,7 +89,8 @@ body {
 #logo img {
   width: 100%;
   height: auto;
-  padding-top: 0.0vw; /* Will vary based on logo dimensions */
+  padding-top: 2.2vw; /* Will vary based on logo dimensions */
+  outline: solid 1px transparent;
 }
 
 h1 {
