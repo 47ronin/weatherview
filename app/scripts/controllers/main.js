@@ -8,8 +8,8 @@
  * Controller of the weatherviewApp
  */
 angular.module('weatherviewApp')
-		var APIkey = 'FORECAST_API_KEY'; // forecast.io API key
 	.controller('MainCtrl', ['$q','$scope', '$http', '$moment', '$filter', function ($q, $scope, $http, $moment, $filter) {
+		var APIkey			= 'FORECAST_API_KEY', // forecast.io API key
 				targetGeo		= '32.718371,-117.162531', // latitude, longitude
 				wOptions		= '&exclude=minutely,hourly,daily,flags', // API exclusions
 				stationURL	= 'https://api.forecast.io/forecast/' + APIkey + '/' + targetGeo + '?callback=JSON_CALLBACK' + wOptions,
