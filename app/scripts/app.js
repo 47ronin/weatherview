@@ -11,13 +11,10 @@
 angular
   .module('weatherviewApp', [
     'ngAnimate',
-    'ngAria',
-    'ngCookies',
     'ngMessages',
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch',
     'angular-momentjs'
   ])
   .config(function ($routeProvider) {
