@@ -8,26 +8,27 @@
  * Controller of the weatherviewApp
  */
 angular.module('weatherviewApp')
-	.controller('MainCtrl', ['$scope', '$http', '$moment', '$filter', function ($scope, $http, $moment, $filter) {
 		var APIkey = 'FORECAST_API_KEY'; // forecast.io API key
-		var targetGeo = '32.718371,-117.162531'; // latitude, longitude
-		var stationURL = 'https://api.forecast.io/forecast/' + APIkey + '/' + targetGeo + '?callback=JSON_CALLBACK';
-		var iconArray = [
-			{oIcon: 'clear-day',           wIcon: 'wi wi-day-sunny'},
-			{oIcon: 'clear-night',         wIcon: 'wi wi-stars'},
-			{oIcon: 'rain',                wIcon: 'wi wi-rain'},
-			{oIcon: 'snow',                wIcon: 'wi wi-snow'},
-			{oIcon: 'sleet',               wIcon: 'wi wi-sleet'},
-			{oIcon: 'wind',                wIcon: 'wi wi-cloudy-gusts'},
-			{oIcon: 'fog',                 wIcon: 'wi wi-fog'},
-			{oIcon: 'cloudy',              wIcon: 'wi wi-cloudy'},
-			{oIcon: 'partly-cloudy-day',   wIcon: 'wi wi-day-cloudy'},
-			{oIcon: 'partly-cloudy-night', wIcon: 'wi wi-night-cloudy'}
-		];
-		$http.jsonp(stationURL)
-		.success(function(data){
-			var wRaw = data.currently;
-			var searchIcon = $filter('filter')(iconArray, {oIcon: wRaw.icon});
+	.controller('MainCtrl', ['$q','$scope', '$http', '$moment', '$filter', function ($q, $scope, $http, $moment, $filter) {
+				targetGeo		= '32.718371,-117.162531', // latitude, longitude
+				wOptions		= '&exclude=minutely,hourly,daily,flags', // API exclusions
+				stationURL	= 'https://api.forecast.io/forecast/' + APIkey + '/' + targetGeo + '?callback=JSON_CALLBACK' + wOptions,
+				iconArray		= [
+					{oIcon: 'clear-day',           wIcon: 'wi wi-day-sunny'},
+					{oIcon: 'clear-night',         wIcon: 'wi wi-stars'},
+					{oIcon: 'rain',                wIcon: 'wi wi-rain'},
+					{oIcon: 'snow',                wIcon: 'wi wi-snow'},
+					{oIcon: 'sleet',               wIcon: 'wi wi-sleet'},
+					{oIcon: 'wind',                wIcon: 'wi wi-cloudy-gusts'},
+					{oIcon: 'fog',                 wIcon: 'wi wi-fog'},
+					{oIcon: 'cloudy',              wIcon: 'wi wi-cloudy'},
+					{oIcon: 'partly-cloudy-day',   wIcon: 'wi wi-day-cloudy'},
+					{oIcon: 'partly-cloudy-night', wIcon: 'wi wi-night-cloudy'}
+				];
+		$q.all([$http.jsonp(stationURL)])
+		.then(function(promise){
+			var wRaw = promise[0].data.currently,
+			searchIcon = $filter('filter')(iconArray, {oIcon: wRaw.icon});
 			$scope.wIcon = searchIcon[0].wIcon;
 			$scope.wHumidity = wRaw.humidity;
 			$scope.wOzone = wRaw.ozone;
