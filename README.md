@@ -1,4 +1,4 @@
-# weatherview
+# weatherview [![Build Status](https://travis-ci.org/47ronin/weatherview.svg?branch=master)](https://travis-ci.org/47ronin/weatherview) [![Dependencies](https://david-dm.org/47ronin/weatherview.svg)](https://david-dm.org/47ronin/weatherview)
 
 This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
 version 0.11.1.
